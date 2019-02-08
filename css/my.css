@@ -1,3 +1,130 @@
 .searchFunctions{
     margin-bottom: 20px;
 }
+
+.navbarStyling{
+    background-color: rgb(59, 57, 57);
+}
+
+.navStyling{
+    color:white !important;
+}
+
+.navBoxStyling{
+    color: black !important;
+}
+
+.mainBody {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: left;
+    background-color: white;
+  }
+
+.twoDivContainer{
+    margin-left:250px;
+    margin-right:250px;
+    max-width: 1400px;
+    min-height:400px;
+    min-width:1400px;
+    margin-top:40px;
+    margin-bottom:50px;
+}
+
+.divOneForm{
+    text-align:center;
+    height:700px;
+    width:225px;
+    min-height:350px;
+    min-width:112.5px;
+    float:left;
+    background-color:lightgrey;
+}
+
+.divTwoDisplay{
+    text-align:center;
+    margin-top:8%;
+    height:500px;
+    width:1150px;
+    float:right;
+    background-color:lightgrey;
+}
+
+.imageDisplay{
+    margin-top:3%;
+    margin-left:2%;
+    height:500px;
+    width:750px;
+    float:left;
+}
+
+.textDisplay{
+    margin-top:10%;
+    margin-left:10%;
+    width:175px;
+    float:left;
+
+}
+
+.formatting{
+    margin-left:400px;
+    width:200px;
+    float: left;
+}
+
+.manufacturerInput{
+    margin:auto;
+}
+
+.displacementInput{
+    margin-bottom:15px
+}
+
+.horsepowerInput{
+    margin-bottom:15px
+}
+
+.previewHeadingFormat{
+    margin-bottom:14px;
+}
+
+.priceInput{
+    margin-bottom:15px
+}
+
+.spacing{
+    clear:both;
+}
+
+.clearFooter{
+    clear:both;
+    margin-top:30px;
+}
+
+.creationHeading{
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.creationContainer{
+    width: 300px;
+    float: left;
+    height: 800px;
+    background-color: lightgrey;
+}
+
+.creationDisplayContainer{
+    width: 300px;
+    float: right;
+    height: 800px;
+    background-color: lightgrey;
+}
+
+  .footerStyling{
+      background-color: rgb(59, 57, 57);
+    width:auto;
+  }

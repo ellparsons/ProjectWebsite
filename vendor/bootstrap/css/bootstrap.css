@@ -60,7 +60,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color:grey;
 }
 
 [tabindex="-1"]:focus {
@@ -4208,6 +4208,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  color:white;
 }
 
 .navbar-nav .nav-link {
