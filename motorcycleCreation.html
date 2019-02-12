@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta>
+
+<head>
+
+    <link href="css/my.css" rel="stylesheet">
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbarStyling fixed-top">
+
+            <div class="container">
+              <a class="navbar-brand" href="motorcycleHomepage.html">Manual Trader</a>
+    
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li>
+                    <a class="nav-link navStyling" href="motorcycleSearch.html">Motorcycle Search</a>
+                  </li>
+                  <li>
+                    <a class="nav-link navStyling" href="motorcycleCreation.html">Motorcycle Create</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    
+          </nav>
+</head>
+
+
+<body onload="loadingData()">
+
+    <div class="twoDivContainer">
+        <div class="divOneForm">
+            <h3 class="creationHeading">Add Motorcycle</h3>
+                <form id="creationMB" class="creationMB">
+                <div>
+                    <h4>Manufacturer:</h4>
+                    <input id="motorcycleManufacturer"type="text" onkeyup="addText(this.id)">
+                    <p id="modelAlert"></p>
+                </div>
+                <div>
+                    <h4>Model:</h4>
+                    <input id="motorcycleModel"type="text" onkeyup="addText(this.id)">
+                    <p id="modelAlert"></p>
+                </div>
+                <div>
+                    <h4>Category:</h4>
+                    <input id="motorcycleCategory" type="text" onkeyup="addText(this.id)">
+                    <p id="modelAlert"></p>
+                </div>
+                <div class="displacementInput">
+                    <h4>Displacement:</h4>
+                    <input id="motorcycleDisplacement" type="text" onkeyup="addText(this.id)">
+                </div>
+                <div class="horsepowerInput">
+                    <h4>Horsepower:</h4>
+                    <input id="motorcycleHorsepower" type="text" onkeyup="addText(this.id)">
+                </div>
+                <div class="priceInput">
+                    <h4>Price:</h4>
+                    <input id="motorcyclePrice" type="number" min="0" onkeyup="addText(this.id)" onclick="addText(this.id)" oninput="this.value = Math.abs(this.value)">
+                </div>
+                <div class=>
+                <h4>License:</h4>
+                    <select class="motorcycleLicense" id="dropdownLicense" onclick="addLicense(this.id)">
+                    </select>
+                </div>
+                <div>
+                    <input type="button" id="submitButton" value="Submit" onClick="createMotorcycle()"/>
+                </div>
+
+            </form>
+        </div>
+        <div class="divTwoDisplay">
+            <div class="imageDisplay">
+                <img class="card-img-top" src="http://placehold.it/700x400">
+            </div>
+
+
+            <div class="textDisplay">
+
+                <div class="presetText">
+                    <div class="previewTextFormatting">
+                        <h3 class=previewParaFormat>Manufacturer : </h3>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p class="previewParaFormat">Model : </p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p class="previewParaFormat">Category : </p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p class="previewParaFormat">Displacement : </p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p class="previewParaFormat">Horsepower : </p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p class="previewParaFormat">Price (£) : </p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p class="previewParaFormat">License : </p>
+                    </div>
+                </div>
+
+                <div class="newText">
+                    <div class="previewTextFormatting">
+                        <h3 id="newmotorcycleManufacturer" class=previewParaFormat>Manufacturer</h3>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p id="newmotorcycleModel" class="previewParaFormat">Model</p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p id="newmotorcycleCategory" class="previewParaFormat">Category</p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p id="newmotorcycleDisplacement" class="previewParaFormat">Displacement</p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p id="newmotorcycleHorsepower" class="previewParaFormat">Horsepower</p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p id="newmotorcyclePrice" class="previewParaFormat">Price</p>
+                    </div>
+                    <div class="previewTextFormatting">
+                        <p id="newmotorcycleLicense" class="previewParaFormat">License</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+    </div>
+    <div class="spacing"></div>
+    <footer class="py-5 bg-dark clearFooter">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+            </div> 
+    </footer>
+</body>
+
+    <script src="js/motorcycleCreation.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</html>

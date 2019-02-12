@@ -47,27 +47,17 @@
 
 .divTwoDisplay{
     text-align:center;
-    margin-top:8%;
-    height:500px;
+    height:700px;
     width:1150px;
     float:right;
     background-color:lightgrey;
 }
 
 .imageDisplay{
-    margin-top:3%;
-    margin-left:2%;
+    margin-top:130px;
     height:500px;
     width:750px;
     float:left;
-}
-
-.textDisplay{
-    margin-top:10%;
-    margin-left:10%;
-    width:175px;
-    float:left;
-
 }
 
 .formatting{
@@ -122,6 +112,55 @@
     float: right;
     height: 800px;
     background-color: lightgrey;
+}
+
+.peopleImage{
+    width:426px;
+    height:240px;
+}
+
+.peopleBox{
+    width:20%;
+    display:inline-block;
+}
+
+.textDisplay{
+    margin-top:35px;
+    margin-bottom:40px;
+    height:380px;
+    width:400x;
+    float:left;
+}
+
+.presetText{
+    margin-top:70px;
+    float:left;
+    margin-right:10px;
+    width:190px;
+    text-align:right;
+}
+
+.newText{
+    margin-top:70px;
+    float:right;
+    width:190px;
+    text-align:left;
+}
+
+.previewTextFormatting{
+    min-height:40px;
+    min-width:190px;
+    height:48px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.motorcycleLicense{
+    margin-bottom:15px;
+}
+
+.licenseInput{
+    margin-bottom:15px;
 }
 
   .footerStyling{

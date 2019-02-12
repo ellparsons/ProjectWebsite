@@ -13,16 +13,21 @@ function loadingData(){
     request.send();
     request.onload=function(){
         motorcycleDB = request.response;
-        dropdownLicense();
     }}
 
+function createPeople(){
+    let txt="";
 
-function dropdownLicense(){
-    let dropdown = document.getElementById("dropdownLicense");
-    let contents="";
-    let licenseList=["CBT","A1","A2","A"]
-        for(i=0; i<licenseList.length; i++){
-            contents+="<option value='"+ licenseList[i] +"'>"+ licenseList[i]+"</option>";
-        }
-    dropdown.innerHTML+=contents;
+    for(i=0; i<motorcycleDB.length;i++){
+        txt+="<div class='col-lg-3 col-md-4 col-sm-6 portfolio-item'>";
+        txt+="<div class='card h-100'>";
+        txt+="<a href='#''><img class='card-img-top' src='./searchPageImages/"+ i +".png' alt=''></a>";
+        txt+="<div class='card-body'></div>";
+        txt+="<a href='motorcycleDetails.html?'>TEST</a>";
+        txt+="</h4>";
+        txt+="</div>";
+        txt+="</div>";
+        txt+="</div>";
+    }
+    document.getElementById("contentRow").innerHTML = txt;
 }

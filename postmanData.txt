@@ -1,0 +1,194 @@
+1 x
+{
+	"manufacturer":"Yamaha",
+	
+	"model":"R1",
+	
+	"displacement":"998",
+	
+	"category":"Sport",
+	
+	"horsepower":"190",
+	
+	"price":"18499",
+	
+	"license":"A"
+
+}
+
+
+
+
+2 x
+{
+	"manufacturer":"Yamaha",
+	
+	"model":"R6",
+	
+	"displacement":"600",
+	
+	"category":"Sport",
+	
+	"horsepower":"116",
+	
+	"price":"10999",
+	
+	"license":"A"
+
+}
+
+
+
+9 x
+{
+	"manufacturer":"Suzuki",
+	
+	"model":"GSX-R1000",
+	
+	"displacement":"999",
+	
+	"category":"Sport",
+	
+	"horsepower":"156",
+	
+	"price":"13249",
+	
+	"license":"A"
+
+}
+
+
+
+6 x
+{
+	"manufacturer":"Kawasaki",
+	
+	"model":"H2R",
+	
+	"displacement":"998",
+	
+	"category":"Sport",
+	
+	"horsepower":"326",
+	
+	"price":"41000",
+	
+	"license":"A"
+
+}
+
+
+
+3 x
+{
+	"manufacturer":"Yamaha",
+	
+	"model":"MT-07",
+	
+	"displacement":"689",
+	
+	"category":"Naked",
+	
+	"horsepower":"73",
+	
+	"price":"6349",
+	
+	"license":"A2"
+
+}
+
+
+
+
+
+7 x
+
+{
+	"manufacturer":"Kawasaki",
+	
+	"model":"Ninja-300",
+	
+	"displacement":"296",
+	
+	"category":"Sport",
+	
+	"horsepower":"39",
+	
+	"price":"4900",
+	
+	"license":"A1"
+
+}
+
+
+
+
+8 x
+{
+	"manufacturer":"KTM",
+	
+	"model":"250SX-F",
+	
+	"displacement":"249",
+	
+	"category":"Enduro",
+	
+	"horsepower":"35",
+	
+	"price":"6999",
+	
+	"license":"A1"
+
+}
+
+
+
+
+8 x
+{
+	"manufacturer":"Yamaha",
+	
+	"model":"YZF-R125",
+	
+	"displacement":"124",
+	
+	"category":"Sport",
+	
+	"horsepower":"13",
+	
+	"price":"3999",
+	
+	"license":"CBT"
+
+}
+
+
+
+9 x
+{
+	"manufacturer":"Honda",
+	
+	"model":"MSX125",
+	
+	"displacement":"124",
+	
+	"category":"Naked",
+	
+	"horsepower":"9",
+	
+	"price":"3599",
+	
+	"license":"CBT"
+
+}
+
+
+
+
+
+
+
+
+
+
+

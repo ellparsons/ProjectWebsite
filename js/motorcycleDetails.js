@@ -21,18 +21,18 @@ function loadingData(){
     function pageId(){
        let url = window.location.href;
        let urlId= url.split("?")[1];
-       console.log(urlId);
        return (urlId);
     }
 
 function imageSpawn(){
-    let idRetrieve = pageId();
-    console.log(idRetrieve);
+    let imageNumber = pageId();
+    console.log(imageNumber);
     let image="";
-        image+="<div class='col-md-8'>"
-        image+="<img id='idImage' class='img-fluid' src='./images/"+idRetrieve+".png>"
-        image+="</div>"
-        console.log(idRetrieve);
+        image+="<div class='col-md-8'>";
+        image+="<img id='idImage' class='img-fluid' src='./searchPageImages/"+ imageNumber +".png'></a>";
+        image+="</div>";
+    console.log(imageNumber+".png");
+    document.getElementById("imageContainer").innerHTML = image;
  }
 
 function dataSpawn(){

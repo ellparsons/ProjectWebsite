@@ -8,12 +8,9 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Start Bootstrap Template</title>
+  <title>Details</title>
 
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
 </head>
@@ -21,34 +18,28 @@
 <body onload="loadingData()">
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="motorcycleSearch.html">Motorcycles</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="blog-post.html">Comments</a>
-            </li>
-          </ul>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbarStyling fixed-top">
+
+        <div class="container">
+          <a class="navbar-brand" href="motorcycleHomepage.html">Manual Trader</a>
+
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li>
+                <a class="nav-link navStyling" href="motorcycleSearch.html">Motorcycle Search</a>
+              </li>
+              <li>
+                <a class="nav-link navStyling" href="motorcycleCreation.html">Motorcycle Create</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+
+      </nav>
 
   <!-- Page Content -->
   <div class="container">
@@ -67,8 +58,8 @@
 
     <!-- Portfolio Item Row -->
     <div class="row">
-      <div class="col-md-8">
-        <img id="idImage" class="img-fluid" src="./images/0.png">
+      <div class="col-md-8" id="imageContainer">
+        <img id="idImage" class="img-fluid" src="">
       </div>
       <div class="col-md-4" id="contentContainer">
         <h3 class="my-3">Project Details</h3>
@@ -79,10 +70,6 @@
           <li>Adipiscing Elit</li>
         </ul>
       </div>
-
-    </div>
-    <div class="row">
-
     </div>
   </div>
   <!-- /.container -->
@@ -96,7 +83,7 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="js/motorcycleSinglePage.js"></script>
+  <script src="js/motorcycleDetails.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 

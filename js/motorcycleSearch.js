@@ -13,20 +13,27 @@ request.responseType="json";
 request.send();
 request.onload=function(){
     motorcycleDB = request.response;
+    pageId();
     dataTable();
     dropdownManufacturer();
     dropdownCategory();
     dropdownLicense();
 }}
 
+function pageId(){
+    let url = window.location.href;
+    let urlId= url.split("?")[1];
+    return (urlId);
+ }
+
 function dataTable(){
     let txt="";
-
+    let imageNumber=pageId();
     for(i=0; i<motorcycleDB.length; i++){
 
         txt+="<div class='col-lg-3 col-md-4 col-sm-6 portfolio-item'>";
         txt+="<div class='card h-100'>";
-        txt+="<a href='#''><img class='card-img-top' src='http://placehold.it/700x400' alt=''></a>";
+        txt+="<a href='#''><img class='card-img-top' src='./searchPageImages/"+ motorcycleDB[i].id +".png'</a>";
         txt+="<div class='card-body'></div>";
         txt+="<a href='motorcycleDetails.html?"+ motorcycleDB[i].id + "'>" + motorcycleDB[i].manufacturer + " " + motorcycleDB[i].model + "</a>";
         txt+="</h4>";
@@ -69,7 +76,7 @@ function dropdownLicense(){
     let dropdown = document.getElementById("dropdownLicense");
     let contents="";
     let license="";
-    contents+="<option value='UnrestrictedA2CBT'>All</options>"
+    contents+="<option value='AA2A1CBT'>All</options>"
         for(i=0; i<motorcycleDB.length; i++){
             if (license.includes(motorcycleDB[i].license)==false){
             contents+="<option value='"+ motorcycleDB[i].license +"'>"+ motorcycleDB[i].license+"</option>";
@@ -79,7 +86,6 @@ function dropdownLicense(){
     dropdown.innerHTML+=contents;
 }
 
-
 function returnResults(){
     let txt="";
     let searchInput=document.getElementById("searchText").value
@@ -87,11 +93,17 @@ function returnResults(){
     let category=document.getElementById("dropdownCategory").value;
     let license=document.getElementById("dropdownLicense").value;
 
-    if(license.includes("Unrestricted")){ //Change to "A" in the DB, Use CBT,A1,A2,A//
-        license=("UnrestrictedA2CBT");
+
+   
+
+    if(license === "A"){
+        license=["A","A2","A1","CBT"];
     }
-    else if (license.includes("A2")){
-        license=("A2CBT");
+    else if (license === "A2"){
+        license=["A2","A1","CBT"];
+    }
+    else if(license === "A1"){
+        license=["A1","CBT"]
     }
 
     searchInput=searchInput.toUpperCase(); 
@@ -108,7 +120,7 @@ function returnResults(){
         upperMotorcycleNoSpace.includes(searchInput)))))){   
             txt+="<div class='col-lg-3 col-md-4 col-sm-6 portfolio-item'>";
             txt+="<div class='card h-100'>";
-            txt+="<a href='#''><img class='card-img-top' src='http://placehold.it/700x400' alt=''></a>";
+            txt+="<a href='#''><img class='card-img-top' src='./searchPageImages/"+ motorcycleDB[i].id +".png'</a>";
             txt+="<div class='card-body'></div>";
             txt+="<a href='motorcycleDetails.html?" + motorcycleDB[i].id + "'>" + motorcycleDB[i].manufacturer + " " + motorcycleDB[i].model + "</a>";
             txt+="</h4>";
@@ -119,3 +131,5 @@ function returnResults(){
     }
     document.getElementById("contentRow").innerHTML = txt;
 }
+
+// /searchPageImages/"+ i +".png
