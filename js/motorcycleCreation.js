@@ -22,6 +22,12 @@ function addText(id){
     updatingElement.innerHTML = feedingElement.value;
 }
 
+function inputLength(id){
+    if(input.value.length==3 && event.keyCode!=8) {
+        return false;2
+    }
+}
+
 function priceInput(){
 var inputNumber = document.getElementById('motorcyclePrice');
 inputNumber.onkeydown = function(e) {
@@ -81,7 +87,7 @@ function createMotorcycle(){
     request.send(jsonString);
 
     let updateText = document.getElementById("alertText");
-    updateText.innerHTML+=("Motorcycle Created");
+    updateText.innerHTML=("Motorcycle Created");
 
 }
 

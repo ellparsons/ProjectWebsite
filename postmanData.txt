@@ -39,7 +39,7 @@
 
 
 
-9 x
+3 x
 {
 	"manufacturer":"Suzuki",
 	
@@ -59,7 +59,7 @@
 
 
 
-6 x
+4 x
 {
 	"manufacturer":"Kawasaki",
 	
@@ -79,7 +79,7 @@
 
 
 
-3 x
+5 x
 {
 	"manufacturer":"Yamaha",
 	
@@ -101,7 +101,7 @@
 
 
 
-7 x
+6 x
 
 {
 	"manufacturer":"Kawasaki",
@@ -123,7 +123,7 @@
 
 
 
-8 x
+7 x
 {
 	"manufacturer":"KTM",
 	
@@ -181,6 +181,108 @@
 	"license":"CBT"
 
 }
+
+
+
+10 x
+{
+	
+	"manufacturer":"KTM",
+	"model":"125 Duke",
+	
+	"displacement":"124",
+	
+	"category":"Naked",
+	
+	"horsepower":"14",
+	
+	"price":"4199",
+	
+	"license":"CBT"
+
+}
+
+
+
+11 x
+{
+	"manufacturer":"Honda",
+	
+	"model":"CB125R",
+	
+	"displacement":"124",
+	
+	"category":"Naked",
+	
+	"horsepower":"13",
+	
+	"price":"3949",
+	
+	"license":"CBT"
+
+}
+
+
+
+12 x
+{
+	"manufacturer":"Honda",
+	
+	"model":"CBR500R",
+	
+	"displacement":"499",
+	
+	"category":"Sport",
+	
+	"horsepower":"49",
+	
+	"price":"5949",
+	
+	"license":"A2"
+
+}
+
+
+
+13 x
+{
+	"manufacturer":"Yamaha",
+	
+	"model":"XT250",
+	
+	"displacement":"249",
+	
+	"category":"Enduro",
+	
+	"horsepower":"22",
+	
+	"price":"4999",
+	
+	"license":"A1"
+
+}
+
+
+
+14 x
+{
+	"manufacturer":"Husqvarna",
+	
+	"model":"FE 450",
+	
+	"displacement":"450",
+	
+	"category":"Enduro",
+	
+	"horsepower":"63",
+	
+	"price":"7290",
+	
+	"license":"A2"
+
+}
+
+
 
 
 

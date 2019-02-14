@@ -26,12 +26,10 @@ function loadingData(){
 
 function imageSpawn(){
     let imageNumber = pageId();
-    console.log(imageNumber);
     let image="";
         image+="<div class='col-md-8'>";
         image+="<img id='idImage' class='img-fluid' src='./searchPageImages/"+ imageNumber +".png'></a>";
         image+="</div>";
-    console.log(imageNumber+".png");
     document.getElementById("imageContainer").innerHTML = image;
  }
 

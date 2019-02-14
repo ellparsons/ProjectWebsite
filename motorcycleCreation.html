@@ -9,6 +9,8 @@
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <title>ManualTrader - Create</title>
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbarStyling fixed-top">
 
             <div class="container">
@@ -37,12 +39,20 @@
 <body onload="loadingData()">
 
     <div class="twoDivContainer">
+            <div class="spacingCreation">
+                </div>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="motorcycleHomepage.html">Home</a>
+                    <li class="breadcrumb-item active">Create</li>
+                </ol>
+                
         <div class="divOneForm">
             <h3 class="creationHeading">Add Motorcycle</h3>
                 <form id="creationMB" class="creationMB">
                 <div>
                     <h4>Manufacturer:</h4>
-                    <input id="motorcycleManufacturer"type="text" onkeyup="addText(this.id)">
+                    <input id="motorcycleManufacturer"type="text" maxlength="8" onkeyup="addText(this.id)">
                     <p id="modelAlert"></p>
                 </div>
                 <div>
@@ -57,15 +67,16 @@
                 </div>
                 <div class="displacementInput">
                     <h4>Displacement:</h4>
-                    <input id="motorcycleDisplacement" type="text" onkeyup="addText(this.id)">
+                    <input id="motorcycleDisplacement" type="number" onkeydown="if(this.value.length==3 && event.keyCode!=8) return false;" onkeydown="inputLength(this.id)" onkeyup="addText(this.id)" maxlength="3" onclick="addText(this.id)" oninput="this.value = Math.abs(this.value)">
+                    
                 </div>
                 <div class="horsepowerInput">
                     <h4>Horsepower:</h4>
-                    <input id="motorcycleHorsepower" type="text" onkeyup="addText(this.id)">
+                    <input id="motorcycleHorsepower" type="number"  onkeydown="if(this.value.length==3 && event.keyCode!=8) return false;" onkeyup="addText(this.id)" onclick="addText(this.id)" oninput="this.value = Math.abs(this.value)">
                 </div>
                 <div class="priceInput">
                     <h4>Price:</h4>
-                    <input id="motorcyclePrice" type="number" min="0" onkeyup="addText(this.id)" onclick="addText(this.id)" oninput="this.value = Math.abs(this.value)">
+                    <input id="motorcyclePrice" type="number" min="0" onkeydown="if(this.value.length==9 && event.keyCode!=8) return false;"onkeyup="addText(this.id)" onclick="addText(this.id)" oninput="this.value = Math.abs(this.value)">
                 </div>
                 <div class=>
                 <h4>License:</h4>
@@ -83,7 +94,7 @@
         </div>
         <div class="divTwoDisplay">
             <div class="imageDisplay">
-                <img class="card-img-top" src="http://placehold.it/700x400">
+                <img class="card-img-top" src="./images/placeholder.png">
             </div>
 
 
@@ -145,9 +156,6 @@
     </div>
     <div class="spacing"></div>
     <footer class="py-5 bg-dark clearFooter">
-            <div class="container">
-                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-            </div> 
     </footer>
 </body>
 

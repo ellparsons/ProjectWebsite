@@ -12,7 +12,13 @@
 
 .navBoxStyling{
     color: black !important;
+    text-align: center !important;
 }
+
+.navBoxTextStyling{
+    text-align: center;
+}
+
 
 .mainBody {
     margin: 0;
@@ -56,7 +62,8 @@
 }
 
 .imageDisplay{
-    margin-top:130px;
+    margin-left: 10px;
+    margin-top:110px;
     height:500px;
     width:750px;
     float:left;
@@ -161,6 +168,14 @@
     margin-top:20px;
     margin-bottom:20px;
 }
+.testing{
+    background-image: url(./searchPageImages/ignorethis.gif);
+}
+
+.mainpageSpacing{
+    margin-left:100px;
+    margin-right:1660px;
+}
 
 .motorcycleLicense{
     margin-bottom:15px;
@@ -170,15 +185,32 @@
     margin-bottom:15px;
 }
 
-  .footerStyling{
-    background-color: rgb(59, 57, 57);
-    width:auto;
+.textStyling{
+    float:bottom;
 }
 
-#footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:60px;   /* Height of the footer */
+.footerStyling{
+    background-color: rgb(59, 57, 57);
+    width:auto !important;
+}
+
+.btnStyling{
+    text-align:center !important;
+    display:block !important;
+}
+
+.breadColor{
+    background-color: #ffffff !important; 
+}
+
+#body {
+    padding:10px;
+    padding-bottom:60px;   /* Height of the footer */
+ }
+ #footer {
+    position:absolute !important;
+    bottom:0 !important;
+    width:100% !important;
+    height:60px !important;   /* Height of the footer */
     background:#6cf;
  }
