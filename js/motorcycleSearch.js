@@ -122,7 +122,7 @@ function returnResults(){
             txt+="<div class='card h-100'>";
             txt+="<a href='#''><img class='card-img-top' src='./searchPageImages/"+ motorcycleDB[i].id +".png'</a>";
             txt+="<div class='card-body'></div>";
-            txt+="<a class='textStyling''href='motorcycleDetails.html?" + motorcycleDB[i].id + "'>" + motorcycleDB[i].manufacturer + " " + motorcycleDB[i].model + "</a>";
+            txt+="<a href='motorcycleDetails.html?"+ motorcycleDB[i].id + "'>" + motorcycleDB[i].manufacturer + " " + motorcycleDB[i].model + "</a>";
             txt+="</h4>";
             txt+="</div>";
             txt+="</div>";
@@ -131,5 +131,3 @@ function returnResults(){
     }
     document.getElementById("contentRow").innerHTML = txt;
 }
-
-// /searchPageImages/"+ i +".png

@@ -284,6 +284,67 @@
 
 
 
+15 x
+{
+	"manufacturer":"Kawasaki",
+	
+	"model":"Versys 1000 Grand Tourer",
+	
+	"displacement":"999",
+	
+	"category":"Tourer",
+	
+	"horsepower":"120",
+	
+	"price":"11999",
+	
+	"license":"A"
+
+}
+
+
+
+
+16 x
+{
+	"manufacturer":"Yamaha",
+	
+	"model":"FJR1300A",
+	
+	"displacement":"1299",
+	
+	"category":"Tourer",
+	
+	"horsepower":"141",
+	
+	"price":"14299",
+	
+	"license":"A"
+
+}
+
+
+
+17 x
+{
+	"manufacturer":"Honda",
+	
+	"model":"Goldwing 1800",
+	
+	"displacement":"1799",
+	
+	"category":"Tourer",
+	
+	"horsepower":"125",
+	
+	"price":"29799",
+	
+	"license":"A"
+
+}
+
+
+
 
 
 
