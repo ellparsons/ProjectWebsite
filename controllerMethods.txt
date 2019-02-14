@@ -1,0 +1,14 @@
+motorcycle controller methods
+
+@GetMapping("/get/motorcycle/{id}")
+	public MySpringBootMotorcycleModel getMotorcycleByID(@PathVariable("id")Integer motorcycleID) {
+		return myRepository.findById(motorcycleID).orElseThrow(()-> new MySpringBootMotorcycleException("MySpringBootMotorcycleModel","id",motorcycleID));
+	}
+	
+	@DeleteMapping("/delete/motorcycle/{id}")
+	public ResponseEntity<?> deleteVehicle(@PathVariable("id")Integer id){
+		MySpringBootMotorcycleModel mSDM = myRepository.findById(id).orElseThrow(()->new MySpringBootMotorcycleException("vehicle","id",id));
+		
+		myRepository.delete(mSDM);
+		return ResponseEntity.ok().build();
+	}

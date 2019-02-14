@@ -1,0 +1,50 @@
+@Given("^Given the correct web address$")
+	@Test
+	public void the_correct_web_address()  {
+		test=extent.startTest("Website search + creation Test : ");
+		test.log(LogStatus.INFO, "Loading browser and homepage");
+		driver.get(Constants.URL);
+	}
+
+@When("^I navigate to the Search page$")
+	@Test
+	public void i_navigate_to_the_Search_page()  {
+	    test.log(LogStatus.INFO, "Navigate to search page : ");
+	    MotorcycleHomepage homepage = PageFactory.initElements(driver, MotorcycleHomepage.class);
+	    	homepage.navigateToSearchPage();
+	}
+
+	@Then("^I can browse the displayed motorcycles$")
+	@Test
+	public void i_can_browse_the_displayed_motorcycles()   {
+		MotorcycleSearchpage search = PageFactory.initElements(driver, MotorcycleSearchpage.class);
+		boolean testResult=false;
+		if(search.SearchResult().equals(testVariable)) {
+			test.log(LogStatus.PASS, "PASS");
+			testResult=true;
+		}
+	}
+
+	@When("^I input a motorycle and I click the search button$")
+	@Test
+	public void i_click_the_search_button()  {
+		MotorcycleSearchpage search = PageFactory.initElements(driver, MotorcycleSearchpage.class);
+			test.log(LogStatus.INFO,"Inputting search choices");
+			search.InputSearchText(testVariable);
+			test.log(LogStatus.INFO,"Click search button");
+			search.SubmitSearch();
+	 
+	}
+
+	@Then("^I am shown motorcycles relating to my search$")
+	@Test
+	public void i_am_shown_motorcycles_relating_to_my_search()  {
+		MotorcycleSearchpage search = PageFactory.initElements(driver, MotorcycleSearchpage.class);
+		test.log(LogStatus.INFO,"View search results");
+		boolean testResult = false;
+		if(search.SearchResult().equals(testVariable)) {
+			test.log(LogStatus.PASS, "PASS");
+			testResult = true;
+		}
+		assertEquals(true,testResult );
+	}

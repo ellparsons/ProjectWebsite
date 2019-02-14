@@ -33,7 +33,6 @@ inputNumber.onkeydown = function(e) {
     }
 }
 
-
 function addLicense(id){
     let feedingLicenseElement = document.getElementById(id);
     let updatingLicenseElement = document.getElementById("newmotorcycleLicense");
@@ -79,7 +78,10 @@ function createMotorcycle(){
             "license":motorLC
         }
     )
-
     request.send(jsonString);
+
+    let updateText = document.getElementById("alertText");
+    updateText.innerHTML+=("Motorcycle Created");
+
 }
 

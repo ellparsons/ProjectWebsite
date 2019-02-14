@@ -1,0 +1,100 @@
+ Feature: Create a new motorcycle on a Website
+ As a admin
+ I want to add a motorcycle to a website
+ So that more motorcycles are available
+
+ Scenario:
+ Given the correct web address
+ When I navigate to the Creation page
+ Then I can view motorcycle creation criteria
+ 
+ Scenario:
+ Given the correct web address
+ When I input motorcycle creation data
+ Then I can create a new motorcycle
+
+
+	test.log(LogStatus.INFO,"Inputting search choices");
+			search.OpenManufacturerDropdown();
+			search.SelectManufactureHoice();
+			search.OpenCategoryDropdown();
+			search.SelectCategoryChoice();
+			search.OpenLicenseDropdown();
+			search.SelectLicenseChoice();
+			test.log(LogStatus.INFO,"Click search button");
+			search.SubmitSearch();
+
+
+	
+	static WebDriver driver;
+	static ExtentTest test;
+	static ExtentReports extent;
+
+	@BeforeClass
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\Documents\\chromedriver.exe");
+		extent = new ExtentReports("C:\\Users\\Admin\\Doucments\\Project\\Website\\motorcycleHomepage.html");
+		driver = new ChromeDriver();
+		}
+	
+	@AfterClass
+	public void teardown() {
+		extent.flush(); 
+		driver.quit();
+	}
+	
+	@Before
+	public void everyTestSetup() {
+		
+	}
+	
+	@After
+	public void everyTestTeardown() {
+		
+	}
+	
+	@Given("^the correct web address$")
+	public void the_correct_web_address() throws Throwable {
+		test=extent.startTest("Website search + creation Test : ");
+		test.log(LogStatus.INFO, "Loading browser and homepage");
+	}
+
+	@When("^I navigate to the Creation page$")
+	public void i_navigate_to_the_Creation_page() {
+	    test.log(LogStatus.INFO, "Navigate to creation page");
+	    MotorcycleHomepage homepage = PageFactory.initElements(driver, MotorcycleHomepage.class);
+	    	homepage.navigateToCreationPage();
+	    
+	}
+
+	@Then("^I can view motorcycle creation criteria$")
+	public void i_can_view_motorcycle_creation_criteria() {
+		test.log(LogStatus.INFO, "Start of creation data input");
+		MotorcycleCreationpage creation = PageFactory.initElements(driver, MotorcycleCreationpage.class);
+			
+			
+	}
+
+	@When("^I input motorcycle creation data$")
+	public void i_input_motorcycle_creation_data() throws Throwable {
+		test.log(LogStatus.INFO, "Start of creation data input");
+		MotorcycleCreationpage creation = PageFactory.initElements(driver, MotorcycleCreationpage.class);
+			creation.addManufacturer("TestManufacturer");
+			creation.addModel("TestModel");
+			creation.addCategory("TestCategory");
+			creation.addDisplacement("TestDisplacement");
+			creation.addHorsepower("TestHorsepower");
+			creation.addPrice("TestPrice");
+			creation.addLicense();
+		test.log(LogStatus.INFO, "All data inputted, now submitting");
+			creation.submitCreation();
+	}
+	@And
+
+	@Then("^I can create a new motorcycle$")
+	public void i_can_create_a_new_motorcycle()   {
+		test.log(LogStatus.INFO,"");
+	}
+//*[@id="contentRow"]/div[1]/div/a[2]
+//*[@id="contentRow"]/div[2]/div/a[2]
+		
